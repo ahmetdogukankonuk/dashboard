@@ -140,6 +140,43 @@ a{
 }
 /* Sidebar End */
 
+/* Dashboard Index Start */
+.rounded-4{
+  border-radius: 10px;
+}
+
+.main-box-text{
+  font-weight: bold;
+  font-size: 23px;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  margin-top: 0px;
+  letter-spacing: 3px;
+}
+
+.main-box-number{
+  font-weight: bold;
+  font-size: 25px;
+  color: #0077b6;
+}
+
+.box-icon{
+  color: #90e0ef;
+}
+
+.people-icon{
+  color: var(--theme-color);
+}
+
+.chat-icon{
+  color: #34a0a4;
+}
+
+.dollar-icon{
+  color: #76c893;
+}
+/* Dashboard Index End */
+
 /* Media Queries Start */
 @media screen and (min-width: 768px){
   body{

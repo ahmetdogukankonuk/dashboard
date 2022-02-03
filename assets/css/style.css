@@ -234,6 +234,10 @@ a{
   background-color: var(--theme-color) !important;
   border-color: var(--theme-color) !important;
 }
+
+.sortable{
+  cursor: pointer;
+}
 /* Tables End */
 
 /* Media Queries Start */

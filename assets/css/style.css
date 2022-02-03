@@ -177,6 +177,65 @@ a{
 }
 /* Dashboard Index End */
 
+/* Tables Start */
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.btn-theme {
+  background-color: var(--theme-color) !important;
+  color: white !important;
+  padding: 7px 10px;
+}
+
+.page-link {
+  cursor: pointer !important;
+  color: var(--theme-color) !important;
+  background-color: #fff !important;
+  border: 1px solid #dee2e6 !important;
+}
+
+.page-item.active .page-link {
+  color: #ffff !important;
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+.dt-buttons {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.dt-button-collection{
+  background-color: #ffff !important;
+}
+
+.buttons-print, .buttons-pdf, .buttons-excel, .buttons-csv, .buttons-copy, .buttons-colvis  {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+
+.buttons-columnVisibility{
+  background-color: #ffff !important;
+  color: var(--theme-color) !important;
+}
+
+.buttons-columnVisibility:hover{
+  background-color: var(--theme-color) !important;
+  color: #ffff !important;
+  transition: .25s;
+}
+
+.form-check-input:checked {
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+}
+/* Tables End */
+
 /* Media Queries Start */
 @media screen and (min-width: 768px){
   body{

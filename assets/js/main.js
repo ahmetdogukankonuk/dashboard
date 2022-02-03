@@ -29,3 +29,15 @@ function colorLink(){
     }
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+
+// Data Table Function
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        lengthChange: true,
+        buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print', 'colvis' ]
+    } );
+ 
+    table.buttons().container()
+        .appendTo( '#example_wrapper .col-md-6:eq(0)' );
+} );

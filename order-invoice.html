@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.bootstrap5.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="toggle">
+                <i class='bi bi-list' id="header-toggle"></i>
+            </div>
+            <div class="profile-img">
+                <img src="./assets/img/profile.jpg" alt="profile-pic">
+            </div>
+        </header>
+
+        <div class="sidebar" id="navbar">
+            <nav class="sidebar-nav">
+                <div>
+                    <a href="index.html" class="sidebar-logo">
+                        <i class="bi bi-app sidebar-logo-icon"></i>
+                        <span class="sidebar-logo-name">Lorem LLC</span>
+                    </a>
+
+                    <div>
+                        <a href="index.html" class="sidebar-link">
+                            <i class="bi bi-graph-down sidebar-icon"></i>
+                            <span>Dashboard</span>
+                        </a>
+                        
+                        <a href="categories.html" class="sidebar-link">
+                            <i class="bi bi-folder sidebar-icon"></i>
+                            <span>Categories</span>
+                        </a>
+
+                        <a href="products.html" class="sidebar-link">
+                            <i class="bi bi-box sidebar-icon"></i>
+                            <span>Products</span>
+                        </a>
+                        
+                        <a href="orders.html" class="sidebar-link active">
+                            <i class="bi bi-cart-check sidebar-icon"></i>
+                            <span>Orders</span>
+                        </a>
+
+                        <a href="messages.html" class="sidebar-link">
+                            <i class="bi bi-chat sidebar-icon"></i>
+                            <span>Messages</span>
+                        </a>
+                        
+                        <a href="users.html" class="sidebar-link">
+                            <i class="bi bi-people sidebar-icon"></i>
+                            <span>Users</span>
+                        </a>
+
+                        <a href="user-roles.html" class="sidebar-link">
+                            <i class="bi bi-person-x sidebar-icon"></i>
+                            <span>User Roles</span>
+                        </a>
+
+                        <a href="company.html" class="sidebar-link">
+                            <i class="bi bi-shop sidebar-icon"></i>
+                            <span>Company</span>
+                        </a>
+                        
+                        <a href="settings.html" class="sidebar-link">
+                            <i class=" bi bi-gear sidebar-icon"></i>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        
+                        <div class="card border-0 rounded-4 shadow py-2 mt-4">
+                            <div class="card-body mx-3 table-responsive">
+                                <div class="row align-items-center text-center mb-3">
+                                    <div class="col-sm-6 text-sm-start">
+                                        <img src="./assets/img/profile.jpg" class="rounded-circle" width="120">
+                                    </div>
+                                    <div class="col text-sm-end mt-3 mt-sm-0">
+                                        <h3 class="mb-3">Invoice</h3>
+                                        <h5><strong>Lorem LLC</strong></h5>
+                                        <p class="mb-0">845 55th Street<br>Emeryville, California(CA), 94608</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="text-500">Invoice to</h6>
+                                        <h5><strong>John Doe</strong></h5>
+                                        <p>845 55th Street<br>Emeryville, California(CA), 94608</p>
+                                        <p><a href="mailto:johndoe@example.com">johndoe@example.com</a><br><a href="tel:+123123123">+123-123-123</a></p>
+                                    </div>
+                                    <div class="col-sm-auto ms-auto">
+                                        <div class="table-responsive">
+                                            <table class="table table-sm table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-sm-end">Order No:</th>
+                                                        <td>129197</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-sm-end">Invoice No:</th>
+                                                        <td>E0Z45K11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-sm-end">Invoice Date:</th>
+                                                        <td>22-02-2022</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="text-sm-end">Payment:</th>
+                                                        <td>Credit Card</td>
+                                                    </tr>
+                                                    <tr class="alert-success">
+                                                        <th class="text-sm-end">Order Total:</th>
+                                                        <td>1836.00$</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <hr class="mb-5">
+                                </div>
+                                
+                                <h5 class="mb-3"><strong>Products</strong></h5>
+                                <table class="table table-hover" width="100%">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th scope="col">Product ID</th>
+                                            <th scope="col">Product Name</th>
+                                            <th scope="col">Quantity</th>
+                                            <th scope="col">Price</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center" style="vertical-align: baseline;">
+                                        <tr>
+                                            <td>1336</td>
+                                            <td>Lorem ipsum dolor sit amet.</td>
+                                            <td><strong>2x</strong></td>
+                                            <td>75.00$</td>
+                                            <td>150.00$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1375</td>
+                                            <td>Lorem ipsum dolor sit amet.</td>
+                                            <td><strong>3x</strong></td>
+                                            <td>50.00$</td>
+                                            <td>150.00$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1338</td>
+                                            <td>Lorem ipsum dolor sit amet.</td>
+                                            <td><strong>5x</strong></td>
+                                            <td>100.00$</td>
+                                            <td>500.00$</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1324</td>
+                                            <td>Lorem ipsum dolor sit amet.</td>
+                                            <td><strong>6x</strong></td>
+                                            <td>150.00$</td>
+                                            <td>900.00$</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr></tr>
+                                    </tfoot>
+                                </table>
+
+                                <div class="row justify-content-end p-2">
+                                    <div class="col-auto">
+                                        <table class="table table table-borderless fs--1 text-end">
+                                            <tr>
+                                                <th>Subtotal:</th>
+                                                <td>1,700.00$</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tax (8%):</th>
+                                                <td>136.00$</td>
+                                            </tr>
+                                            <tr class="border-top">
+                                                <th>Total:</th>
+                                                <td>1,836.00$</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer bg-white text-center">
+                                <p class="mb-0 mt-2">Thanks for shopping from us! Hope to see you soon.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Table JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/dataTables.buttons.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.bootstrap5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
+        <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.colVis.min.js"></script>
+
+        <!-- Bootstrap & Custom JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

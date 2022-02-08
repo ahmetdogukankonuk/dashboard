@@ -249,6 +249,24 @@ a{
   border-radius: 50%;
   overflow: hidden;
 }
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .5rem 1rem;
+  color: var(--theme-color);
+  text-decoration: none;
+  background-color: #ffff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item.active {
+  z-index: 2 !important;
+  color: #ffff !important;
+  background-color: var(--theme-color) !important;
+  border-color: var(--theme-color) !important;
+  border-radius: 5%;
+}
 /* Other End */
 
 /* Media Queries Start */

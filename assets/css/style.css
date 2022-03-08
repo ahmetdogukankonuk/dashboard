@@ -125,6 +125,7 @@ body{
 
 .sub-sidebar-icon{
   font-size: 1rem;
+  padding-left: .2rem;
 }
 
 ::marker {
@@ -143,7 +144,11 @@ body{
   color: #caf0f8;
 }
 
-.active::before{
+.only-active{
+  color: #caf0f8;
+}
+
+.only-active::before{
   background-color: #caf0f8;
   content: '';
   left: 0;

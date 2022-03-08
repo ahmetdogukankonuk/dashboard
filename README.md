@@ -1,6 +1,6 @@
 # Bootstrap 5 Responsive Admin Dashboard
 
-If you want to take a look at the project live visit: [Dashboard](https://tender-spence-0c2445.netlify.app/)
+If you want to take a look at the project live visit: [Dashboard](https://adk-cms-dashboard.netlify.app/)
 
 ![dashboard.png](dashboard.png)
 

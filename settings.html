@@ -17,9 +17,27 @@
             <div class="toggle">
                 <i class='bi bi-list' id="header-toggle"></i>
             </div>
-            <div class="profile-img">
-                <img src="./assets/img/profile.jpg" alt="profile-pic">
-            </div>
+            <ul class="navbar-nav navbar-align">
+                <li class="nav-item dropdown">
+					<a href="#" data-bs-toggle="dropdown">
+                        <img src="./assets/img/profile.jpg" width="30px" class="profile-img">
+                    </a>
+                    <div class="dropdown-menu border-0 shadow-lg rounded-4">
+                        <a class="dropdown-item" href="index.html">
+                            <i class="bi bi-person dropdown-icon"></i>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="settings.html">
+                            <i class="bi bi-gear dropdown-icon"></i>
+                            Settings
+                        </a>
+                        <a class="dropdown-item" href="login.html">
+                            <i class="bi bi-box-arrow-left dropdown-icon"></i>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </header>
 
         <div class="sidebar" id="navbar">
@@ -73,6 +91,10 @@
                             <div class="collapse" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pt-2 small">
                                     <li>
+                                        <a href="new-order.html" class="sidebar-sublink rounded">
+                                            <i class="bi bi-bag-plus sub-sidebar-icon"></i>
+                                            New Order
+                                        </a>
                                         <a href="orders.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-bag-x sub-sidebar-icon"></i>
                                             Cancelled Orders
@@ -106,7 +128,7 @@
                                             <i class="bi bi-pencil-square sub-sidebar-icon"></i>
                                             New Post
                                         </a>
-                                        <a href="comments.html" class="sidebar-sublink rounded">
+                                        <a href="blog-comments.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-chat-left sub-sidebar-icon"></i>
                                             Comments
                                         </a>
@@ -130,6 +152,10 @@
                                         <a href="messages.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-chat sub-sidebar-icon"></i>
                                             User Messages
+                                        </a>
+                                        <a href="new-user.html" class="sidebar-sublink rounded">
+                                            <i class="bi bi-person-plus sub-sidebar-icon"></i>
+                                            New User
                                         </a>
                                         <a href="users.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-person-check sub-sidebar-icon"></i>
@@ -218,11 +244,11 @@
                         <div class="card border-0 rounded-4 shadow py-2 mb-4">
                             <div class="card-body mx-3">
                                 <div class="list-group list-group-flush" role="tablist">
-									<a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#company" role="tab">
-                                        Company
-                                    </a>
-									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#website" role="tab">
+                                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#website" role="tab">
                                         Website
+                                    </a>
+									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#company" role="tab">
+                                        Company
                                     </a>
 									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#social" role="tab">
                                         Social Media
@@ -245,6 +271,15 @@
 									<a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#terms" role="tab">
                                         Terms of Service
                                     </a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#navbarlogo" role="tab">
+                                        Navbar Logo
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#footerlogo" role="tab">
+                                        Footer Logo
+                                    </a>
+                                    <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#favicon" role="tab">
+                                        Favicon
+                                    </a>
 								</div>
                             </div>
                         </div>
@@ -253,82 +288,7 @@
                     <div class="col-md-9">
                         <div class="tab-content">
 
-                            <div class="tab-pane active" id="company" role="tabpanel">
-                                <div class="card border-0 rounded-4 shadow py-2">
-                                    <div class="card-header bg-white">
-                                        <h5 class="card-title text-black mb-0">
-                                            <strong>Company Info</strong>
-                                        </h5>
-                                    </div>
-                                    <div class="card-body mx-2">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="companyName" class="form-label text-black">Company Name</label>
-                                                        <input type="text" class="form-control" id="companyName" placeholder="Company Name">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="companyMotto" class="form-label text-black">Company Motto</label>
-                                                        <input type="text" class="form-control" id="companyMotto" placeholder="Company Motto">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="mail1" class="form-label text-black">Mail 1</label>
-                                                        <input type="tel" class="form-control" id="mail1" placeholder="Mail 1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="mail2" class="form-label text-black">Mail 2</label>
-                                                        <input type="tel" class="form-control" id="mail2" placeholder="Mail 2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="phone1" class="form-label text-black">Phone 1</label>
-                                                        <input type="tel" class="form-control" id="phone1" placeholder="Phone 1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="phone2" class="form-label text-black">Phone 2</label>
-                                                        <input type="tel" class="form-control" id="phone2" placeholder="Phone 2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="fax1" class="form-label text-black">Fax 1</label>
-                                                        <input type="tel" class="form-control" id="fax1" placeholder="Fax 1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="fax2" class="form-label text-black">Fax 2</label>
-                                                        <input type="tel" class="form-control" id="fax2" placeholder="Fax 2">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-grid mt-3">
-                                                <button type="submit" class="btn btn-theme rounded-4 p-2">
-                                                    Save
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="tab-pane" id="website" role="tabpanel">
+                            <div class="tab-pane active" id="website" role="tabpanel">
                                 <div class="card border-0 rounded-4 shadow py-2">
                                     <div class="card-header bg-white">
                                         <h5 class="card-title text-black mb-0">
@@ -402,7 +362,82 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
+                            <div class="tab-pane" id="company" role="tabpanel">
+                                <div class="card border-0 rounded-4 shadow py-2">
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title text-black mb-0">
+                                            <strong>Company Info</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="card-body mx-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="companyName" class="form-label text-black">Company Name</label>
+                                                        <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="companyMotto" class="form-label text-black">Company Motto</label>
+                                                        <input type="text" class="form-control" id="companyMotto" placeholder="Company Motto">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="mail1" class="form-label text-black">Mail 1</label>
+                                                        <input type="tel" class="form-control" id="mail1" placeholder="Mail 1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="mail2" class="form-label text-black">Mail 2</label>
+                                                        <input type="tel" class="form-control" id="mail2" placeholder="Mail 2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="phone1" class="form-label text-black">Phone 1</label>
+                                                        <input type="tel" class="form-control" id="phone1" placeholder="Phone 1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="phone2" class="form-label text-black">Phone 2</label>
+                                                        <input type="tel" class="form-control" id="phone2" placeholder="Phone 2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="fax1" class="form-label text-black">Fax 1</label>
+                                                        <input type="tel" class="form-control" id="fax1" placeholder="Fax 1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="fax2" class="form-label text-black">Fax 2</label>
+                                                        <input type="tel" class="form-control" id="fax2" placeholder="Fax 2">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid mt-3">
+                                                <button type="submit" class="btn btn-theme rounded-4 p-2">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="tab-pane" id="social" role="tabpanel">
                                 <div class="card border-0 rounded-4 shadow py-2">
                                     <div class="card-header bg-white">
@@ -625,6 +660,114 @@
                                                 </div>
                                             </div>
                                             <div class="d-grid mt-3 mb-2">
+                                                <button type="submit" class="btn btn-theme rounded-4 p-2">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="navbarlogo" role="tabpanel">
+                                <div class="card border-0 rounded-4 shadow py-2">
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title text-black mb-0">
+                                            <strong>Navbar Logo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="card-body mx-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3 mt-2">
+                                                    <img class="img-fluid rounded-4" src="./assets/img/product.jpeg" alt="logo">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label text-black">Select a Logo for Navbar</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="navbarLogoSize" class="form-label text-black"> Navbar Logo Size (Rem)</label>
+                                                        <input type="number" class="form-control" id="navbarLogoSize" placeholder="Navbar Logo Size">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid mt-3">
+                                                <button type="submit" class="btn btn-theme rounded-4 p-2">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="footerlogo" role="tabpanel">
+                                <div class="card border-0 rounded-4 shadow py-2">
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title text-black mb-0">
+                                            <strong>Footer Logo</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="card-body mx-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3 mt-2">
+                                                    <img class="img-fluid rounded-4" src="./assets/img/product.jpeg" alt="logo">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label text-black">Select a Logo for Footer</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="footerLogoSize" class="form-label text-black"> Footer Logo Size (Rem)</label>
+                                                        <input type="number" class="form-control" id="footerLogoSize" placeholder="Footer Logo Size">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid mt-3">
+                                                <button type="submit" class="btn btn-theme rounded-4 p-2">
+                                                    Save
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="favicon" role="tabpanel">
+                                <div class="card border-0 rounded-4 shadow py-2">
+                                    <div class="card-header bg-white">
+                                        <h5 class="card-title text-black mb-0">
+                                            <strong>Favicon</strong>
+                                        </h5>
+                                    </div>
+                                    <div class="card-body mx-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3 mt-2">
+                                                    <img class="img-fluid rounded-4" src="./assets/img/product.jpeg" alt="logo">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label text-black">Select a Favicon</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-grid mt-3">
                                                 <button type="submit" class="btn btn-theme rounded-4 p-2">
                                                     Save
                                                 </button>

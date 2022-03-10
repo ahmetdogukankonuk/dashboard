@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.bootstrap5.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body id="body-pd">
@@ -55,7 +54,7 @@
                         </a>
 
                         <li>
-                            <button class="btn btn-toggle sidebar-link align-items-center rounded collapsed active" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            <button class="btn btn-toggle sidebar-link align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
                                 <i class="bi bi-box sidebar-icon"></i>
                                 Products
                             </button>
@@ -74,7 +73,7 @@
                                             <i class="bi bi-plus-circle sub-sidebar-icon"></i>
                                             New Product
                                         </a>
-                                        <a href="products.html" class="sidebar-sublink rounded sub-active">
+                                        <a href="products.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-boxes sub-sidebar-icon"></i>
                                             All Products
                                         </a>
@@ -91,6 +90,10 @@
                             <div class="collapse" id="orders-collapse">
                                 <ul class="btn-toggle-nav list-unstyled fw-normal pt-2 small">
                                     <li>
+                                        <a href="new-order.html" class="sidebar-sublink rounded">
+                                            <i class="bi bi-bag-plus sub-sidebar-icon"></i>
+                                            New Order
+                                        </a>
                                         <a href="orders.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-bag-x sub-sidebar-icon"></i>
                                             Cancelled Orders
@@ -171,7 +174,7 @@
                         </li>
                         
                         <li>
-                            <button class="btn btn-toggle sidebar-link align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#gallery-collapse" aria-expanded="false">
+                            <button class="btn btn-toggle sidebar-link align-items-center rounded collapsed active" data-bs-toggle="collapse" data-bs-target="#gallery-collapse" aria-expanded="false">
                                 <i class="bi bi-images sidebar-icon"></i>
                                 Gallery
                             </button>
@@ -186,7 +189,7 @@
                                             <i class="bi bi-play-btn sub-sidebar-icon"></i>
                                             Videos
                                         </a>
-                                        <a href="references.html" class="sidebar-sublink rounded">
+                                        <a href="references.html" class="sidebar-sublink rounded sub-active">
                                             <i class="bi bi-collection sub-sidebar-icon"></i>
                                             References
                                         </a>
@@ -229,34 +232,17 @@
         </div>
 
         <div class="container page-title">
-            <h3>Product Images</h3>
+            <h3>References</h3>
+            <a href="new-reference.html" class="btn btn-theme text-white rounded-4 shadow float-end">
+                <span><i class="bi bi-file-earmark-plus"></i> Add New</span>
+            </a>
         </div>
-
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card border-0 rounded-4 shadow py-3">
-                            <div class="card-body mx-3 table-responsive">
-                                <form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
-                                    <div class="dz-message">
-                                        <h3 class="m-h-lg">Drag & Drop Files Here to Upload</h3>
-                                        <p class="m-b-lg text-muted">You can drag and drop your images to upload, or you can click and select here.</p>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <section class="mb-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card border-0 rounded-4 shadow py-2 mt-5">
+                        <div class="card border-0 rounded-4 shadow py-2">
                             <div class="card-body mx-3 table-responsive">
 
                                 <table id="example" class="table table-hover" width="100%">
@@ -264,7 +250,7 @@
                                         <tr>
                                             <th scope="col"></th>
                                             <th scope="col">ID</th>
-                                            <th scope="col">Image Title</th>
+                                            <th scope="col">Title</th>
                                             <th scope="col">Image</th>
                                             <th scope="col">Situation</th>
                                             <th scope="col">Action</th>
@@ -276,7 +262,7 @@
                                             <td>1</td>
                                             <td>Voluptatum, unde?</td>
                                             <td>
-                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="150px" alt="category">
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch d-flex justify-content-center">
@@ -285,7 +271,10 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="index.html">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
                                                         <i class="bi bi-trash fs-5 text-danger mx-2"></i>
                                                     </a>
                                                 </div>
@@ -296,7 +285,7 @@
                                             <td>2</td>
                                             <td>Voluptatum, unde?</td>
                                             <td>
-                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="150px" alt="category">
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch d-flex justify-content-center">
@@ -305,7 +294,10 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="index.html">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
                                                         <i class="bi bi-trash fs-5 text-danger mx-2"></i>
                                                     </a>
                                                 </div>
@@ -316,7 +308,7 @@
                                             <td>3</td>
                                             <td>Voluptatum, unde?</td>
                                             <td>
-                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="150px" alt="category">
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch d-flex justify-content-center">
@@ -325,7 +317,10 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="index.html">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
                                                         <i class="bi bi-trash fs-5 text-danger mx-2"></i>
                                                     </a>
                                                 </div>
@@ -336,7 +331,7 @@
                                             <td>4</td>
                                             <td>Voluptatum, unde?</td>
                                             <td>
-                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="150px" alt="category">
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch d-flex justify-content-center">
@@ -345,7 +340,10 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="index.html">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
                                                         <i class="bi bi-trash fs-5 text-danger mx-2"></i>
                                                     </a>
                                                 </div>
@@ -356,7 +354,7 @@
                                             <td>5</td>
                                             <td>Voluptatum, unde?</td>
                                             <td>
-                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="150px" alt="category">
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch d-flex justify-content-center">
@@ -365,7 +363,125 @@
                                             </td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    <a href="index.html">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-trash fs-5 text-danger mx-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sortable"><i class="bi bi-list fs-5"></i></td>
+                                            <td>6</td>
+                                            <td>Voluptatum, unde?</td>
+                                            <td>
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch d-flex justify-content-center">
+                                                    <input class="form-check-input fs-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-trash fs-5 text-danger mx-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sortable"><i class="bi bi-list fs-5"></i></td>
+                                            <td>7</td>
+                                            <td>Voluptatum, unde?</td>
+                                            <td>
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch d-flex justify-content-center">
+                                                    <input class="form-check-input fs-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-trash fs-5 text-danger mx-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sortable"><i class="bi bi-list fs-5"></i></td>
+                                            <td>8</td>
+                                            <td>Voluptatum, unde?</td>
+                                            <td>
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch d-flex justify-content-center">
+                                                    <input class="form-check-input fs-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-trash fs-5 text-danger mx-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sortable"><i class="bi bi-list fs-5"></i></td>
+                                            <td>9</td>
+                                            <td>Voluptatum, unde?</td>
+                                            <td>
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch d-flex justify-content-center">
+                                                    <input class="form-check-input fs-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
+                                                        <i class="bi bi-trash fs-5 text-danger mx-2"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="sortable"><i class="bi bi-list fs-5"></i></td>
+                                            <td>10</td>
+                                            <td>Voluptatum, unde?</td>
+                                            <td>
+                                                <img class="img-fluid rounded-3" src="./assets/img/product.jpeg" width="120px" alt="category">
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch d-flex justify-content-center">
+                                                    <input class="form-check-input fs-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <a href="update-product.html">
+                                                        <i class="bi bi-pencil-square fs-5 text-info mx-2"></i>
+                                                    </a>
+                                                    <a href="#">
                                                         <i class="bi bi-trash fs-5 text-danger mx-2"></i>
                                                     </a>
                                                 </div>
@@ -376,7 +492,7 @@
                                         <tr>
                                             <th scope="col"></th>
                                             <th scope="col">ID</th>
-                                            <th scope="col">Image Title</th>
+                                            <th scope="col">Title</th>
                                             <th scope="col">Image</th>
                                             <th scope="col">Situation</th>
                                             <th scope="col">Action</th>

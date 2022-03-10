@@ -17,9 +17,27 @@
             <div class="toggle">
                 <i class='bi bi-list' id="header-toggle"></i>
             </div>
-            <div class="profile-img">
-                <img src="./assets/img/profile.jpg" alt="profile-pic">
-            </div>
+            <ul class="navbar-nav navbar-align">
+                <li class="nav-item dropdown">
+					<a href="#" data-bs-toggle="dropdown">
+                        <img src="./assets/img/profile.jpg" width="30px" class="profile-img">
+                    </a>
+                    <div class="dropdown-menu border-0 shadow-lg rounded-4">
+                        <a class="dropdown-item" href="index.html">
+                            <i class="bi bi-person dropdown-icon"></i>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="settings.html">
+                            <i class="bi bi-gear dropdown-icon"></i>
+                            Settings
+                        </a>
+                        <a class="dropdown-item" href="login.html">
+                            <i class="bi bi-box-arrow-left dropdown-icon"></i>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </header>
 
         <div class="sidebar" id="navbar">
@@ -106,7 +124,7 @@
                                             <i class="bi bi-pencil-square sub-sidebar-icon"></i>
                                             New Post
                                         </a>
-                                        <a href="comments.html" class="sidebar-sublink rounded">
+                                        <a href="blog-comments.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-chat-left sub-sidebar-icon"></i>
                                             Comments
                                         </a>
@@ -130,6 +148,10 @@
                                         <a href="messages.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-chat sub-sidebar-icon"></i>
                                             User Messages
+                                        </a>
+                                        <a href="new-user.html" class="sidebar-sublink rounded">
+                                            <i class="bi bi-person-plus sub-sidebar-icon"></i>
+                                            New User
                                         </a>
                                         <a href="users.html" class="sidebar-sublink rounded">
                                             <i class="bi bi-person-check sub-sidebar-icon"></i>

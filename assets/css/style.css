@@ -194,6 +194,10 @@ body{
 a{
   text-decoration: none;
 }
+
+.ms-2px{
+  margin-left: 2px;
+}
 /* Sidebar End */
 
 /* Dashboard Index Start */

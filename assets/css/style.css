@@ -15,6 +15,11 @@
   --shadow-color: #90e0ef;
 
   /* Button, Input & Dropdown Colors */
+  --tab-bg-color: #ffff;
+  --tab-text-color: #03045e;
+  --active-tab-bg-color: #03045e;
+  --active-tab-text-color: #ffff;
+
   --new-button-bg-color: #03045e;
   --new-button-text-color: #ffff;
   --button-bg-color: #03045e;
@@ -26,6 +31,9 @@
   --dropdown-text-color: #03045e;
   --dropdown-border-color: #ffff;
   --input-check-color: #03045e;
+  --dark-input-bg-color: #ffff;
+  --dark-input-border-color: #90e0ef;
+  --dark-input-text-color: #151521;
 
   /* Page Link Colors */
   --page-link-bg-color: #ffff;
@@ -56,6 +64,10 @@
   --shadow-color: #151521;
 
   /* Button, Input & Dropdown Colors */
+  --tab-bg-color: #1E1E2D;
+  --tab-text-color: #ffff;
+  --active-tab-bg-color: #151521;
+  --active-tab-text-color: #ffff;
   --new-button-bg-color: #1E1E2D;
   --new-button-text-color: #ffff;
   --button-bg-color: #151521;
@@ -67,6 +79,9 @@
   --dropdown-text-color: #ffff;
   --dropdown-border-color: #151521;
   --input-check-color: #151521;
+  --dark-input-bg-color: #151521;
+  --dark-input-border-color: #151521;
+  --dark-input-text-color: #ffff;
 
   /* Page Link Colors */
   --page-link-bg-color: #1E1E2D;
@@ -90,6 +105,24 @@ body{
     font-size: var(--normal-font-size);
     background-color: var(--bg-color);
     letter-spacing: var(--normal-letter-space);
+}
+
+input{
+  background-color: var(--dark-input-bg-color) !important;
+  border-color: var(--dark-input-border-color) !important;
+  color: var(--dark-input-text-color) !important;
+}
+
+textarea{
+  background-color: var(--dark-input-bg-color) !important;
+  border-color: var(--dark-input-border-color) !important;
+  color: var(--dark-input-text-color) !important;
+}
+
+select{
+  background-color: var(--dark-input-bg-color) !important;
+  border-color: var(--dark-input-border-color) !important;
+  color: var(--dark-input-text-color) !important;
 }
 
 .table>:not(caption)>*>* {
@@ -445,17 +478,17 @@ a{
   position: relative;
   display: block;
   padding: .5rem 1rem;
-  color: var(--sidebar-bg-color);
+  color: var(--tab-text-color);
   text-decoration: none;
-  background-color: #ffff;
+  background-color: var(--tab-bg-color);
   border: 1px solid rgba(0,0,0,.125);
 }
 
 .list-group-item.active {
   z-index: 2 !important;
-  color: #ffff !important;
-  background-color: var(--sidebar-bg-color) !important;
-  border-color: var(--sidebar-bg-color) !important;
+  color: var(--active-tab-text-color) !important;
+  background-color: var(--active-tab-bg-color) !important;
+  border-color: var(--active-tab-bg-color) !important;
   border-top-right-radius: 5px;
   border-radius: 5px;
 }

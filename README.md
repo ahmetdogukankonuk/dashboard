@@ -1,6 +1,7 @@
-# Bootstrap 5 Responsive Admin Dashboard
+# Bootstrap 5 Responsive Admin Dashboard 
+## Feel Free To Use & Follow For More Projects :)
 
-If you want to take a look at the project live visit: [Dashboard](https://adk-cms-dashboard.netlify.app/)
+If you want to take a look at the project live, visit: [Dashboard](https://adk-cms-dashboard.netlify.app/)
 
 ![dashboard.gif](dashboard.gif)
 
@@ -9,6 +10,7 @@ If you want to take a look at the project live visit: [Dashboard](https://adk-cm
 
 This is a responsive Bootstrap 5 Admin Dashboard with features like;
 
+* Dark mode
 * Setting column visibility in data tables
 * Dynamic search in tables
 * Export data tables as CSV, Excel, PDF format

@@ -2,7 +2,7 @@
 
 If you want to take a look at the project live visit: [Dashboard](https://adk-cms-dashboard.netlify.app/)
 
-![dashboard.png](dashboard.png)
+![dashboard.gif](dashboard.gif)
 
 
 ## General info

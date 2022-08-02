@@ -454,6 +454,11 @@ a{
   transition: .5s;
 }
 
+div.dt-button-collection {
+  background-color: var(--dropdown-bg-color) !important;
+  border-color: var(--dropdown-border-color) !important;
+}
+
 .form-check-input:checked {
   background-color: var(--input-check-color) !important;
   border-color: var(--input-check-color) !important;
